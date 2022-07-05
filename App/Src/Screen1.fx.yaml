@@ -94,7 +94,7 @@ Screen1 As screen:
         ZIndex: =7
 
     Label8 As label:
-        Color: =Red
+        Color: =RGBA(0, 134, 208, 1)
         FontWeight: =FontWeight.Bold
         Size: =25
         Text: ="Nhà"
@@ -104,7 +104,7 @@ Screen1 As screen:
         ZIndex: =8
 
     Label8_1 As label:
-        Color: =Green
+        Color: =RGBA(127, 178, 57, 1)
         FontWeight: =FontWeight.Bold
         Size: =25
         Text: ="Cái"
@@ -114,6 +114,8 @@ Screen1 As screen:
         ZIndex: =9
 
     Label8_5 As label:
+        BorderColor: =RGBA(56, 96, 178, 1)
+        Color: =RGBA(168, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Size: =25
         Text: ="Synodus"
