@@ -13,7 +13,7 @@ Screen1 As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =174
+        Height: =178
         Width: =178
         X: =588
         Y: =277
@@ -22,15 +22,17 @@ Screen1 As screen:
     Button2 As button:
         BorderColor: =Transparent
         Color: =RGBA(0, 13, 75, 1)
+        DisplayMode: =If(M,DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =RGBA(215, 223, 240, 1)
         OnSelect: |-
-            =Set(Block_one,RandBetween( 1, 6 ));
-            Set(Block_two,RandBetween( 1, 6 ));
-            Set(Block_three,RandBetween( 1, 6 ));
-            Set(session,session+1);
-        Text: ="Lắc"
-        X: =593
-        Y: =548
+            =Set(Xbat,RandBetween( 400, 780 ));
+            Set(Ybat,100);
+            Set(ShowResult,true);
+            Set(L,true);
+            Set(M,false);
+        Text: ="Mở bát"
+        X: =700
+        Y: =541
         ZIndex: =3
 
     Label5 As label:
@@ -50,11 +52,11 @@ Screen1 As screen:
 
     Label6 As label:
         Align: =Align.Center
-        BorderColor: =If(Block_one + Block_two + Block_three > 10, Red, Black)
+        BorderColor: =If(ShowResult=false,Black,Block_one + Block_two + Block_three > 10, Red, Black)
         BorderThickness: =2
         Fill: |-
             =//RGBA(215, 223, 240, 1)
-            If(Block_one + Block_two + Block_three > 10, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
+            If(ShowResult=false,RGBA(215, 223, 240, 1),Block_one + Block_two + Block_three > 10, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
         FontWeight: =FontWeight.Bold
         Height: =153
         Size: =20
@@ -66,10 +68,10 @@ Screen1 As screen:
 
     Label6_1 As label:
         Align: =Align.Center
-        BorderColor: =If(Block_one + Block_two + Block_three < 11, Red, Black)
+        BorderColor: =If(ShowResult=false,Black,Block_one + Block_two + Block_three < 11, Red, Black)
         BorderThickness: =2
         Fill: |-
-            =If(Block_one + Block_two + Block_three < 11, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
+            =If(ShowResult=false,RGBA(215, 223, 240, 1),Block_one + Block_two + Block_three < 11, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
         FontWeight: =FontWeight.Bold
         Height: =153
         Size: =20
@@ -85,9 +87,10 @@ Screen1 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Size: =18
-        Text: =If(Block_one + Block_two + Block_three > 10, "Tài", "Xỉu") & " / " & Block_one + Block_two + Block_three
-        X: =598
-        Y: =191
+        Text: =Block_one + Block_two + Block_three
+        Width: =53
+        X: =643
+        Y: =344
         ZIndex: =7
 
     Label8 As label:
@@ -178,4 +181,69 @@ Screen1 As screen:
             Visible: =If(Block_three = ThisItem.ID,true,false)
             Width: =44
             ZIndex: =1
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =182
+        Width: =186
+        X: =Xbat
+        Y: =Ybat
+        ZIndex: =15
+
+        Circle3 As circle:
+            BorderThickness: =3
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =180
+            Width: =180
+            ZIndex: =1
+
+        Circle4 As circle:
+            BorderColor: =RGBA(56, 96, 178, 1)
+            BorderThickness: =1
+            Fill: =RGBA(153, 160, 196, 1)
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+        Circle5 As circle:
+            BorderColor: =RGBA(56, 96, 178, 1)
+            BorderThickness: =1
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =80
+            Width: =80
+            X: =50
+            Y: =50
+            ZIndex: =3
+
+        Label2 As label:
+            Align: =Align.Center
+            Color: =RGBA(168, 0, 0, 1)
+            Font: =Font.'Great Vibes'
+            FontWeight: =FontWeight.Bold
+            Height: =58
+            Size: =20
+            Text: ="S"
+            Width: =53
+            X: =63
+            Y: =61
+            ZIndex: =4
+
+    Button2_1 As button:
+        BorderColor: =Transparent
+        Color: =RGBA(0, 13, 75, 1)
+        DisplayMode: =If(L,DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =RGBA(215, 223, 240, 1)
+        OnSelect: |
+            =Set(Xbat,584);
+            Set(Ybat,273);
+            Set(ShowResult,false);
+            Set(Block_one,RandBetween( 1, 6 ));
+            Set(Block_two,RandBetween( 1, 6 ));
+            Set(Block_three,RandBetween( 1, 6 ));
+            Set(session,session+1);
+            Set(L,false);
+            Set(M,true);
+        Text: ="Lắc"
+        X: =510
+        Y: =541
+        ZIndex: =16
 

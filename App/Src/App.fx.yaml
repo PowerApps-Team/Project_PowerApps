@@ -1,4 +1,13 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =
+    OnStart: |
+        =Set(Xbat,584);
+        Set(Ybat,273);
+        Set(ShowResult,false);
+        Set(Block_one,RandBetween( 1, 6 ));
+        Set(Block_two,RandBetween( 1, 6 ));
+        Set(Block_three,RandBetween( 1, 6 ));
+        Set(session,session+1);
+        Set(L,false);
+        Set(M,true);
 
