@@ -1,10 +1,10 @@
 Screen2 As screen:
 
     Timer1 As timer:
-        Duration: =30000
+        Duration: =500
         OnSelect: =
-        OnTimerEnd: =true
-        Reset: =ResetTime
+        OnTimerEnd: |-
+            =UpdateContext({StartTime:!StartTime})
         Start: =StartTime
         X: =310
         Y: =176
@@ -18,6 +18,7 @@ Screen2 As screen:
         ZIndex: =2
 
     Label1 As label:
+        Color: =If(StartTime,Red,Black)
         Text: =Timer1.Text
         X: =687
         Y: =176
@@ -98,7 +99,8 @@ Screen2 As screen:
         ZIndex: =4
 
     Button5 As button:
-        OnSelect: =Set(ResetTime,true)
+        OnSelect: |-
+            =UpdateContext({StartTime:!StartTime})
         Text: ="Button"
         X: =624
         Y: =374
