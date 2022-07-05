@@ -22,45 +22,6 @@ Screen1 As screen:
         Y: =548
         ZIndex: =2
 
-    Label4 As label:
-        Align: =Align.Center
-        BorderColor: =If(Block_one + Block_two + Block_three < 10, Red, Black)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =43
-        Size: =14
-        Text: =Block_one
-        Width: =53
-        X: =647
-        Y: =301
-        ZIndex: =3
-
-    Label4_1 As label:
-        Align: =Align.Center
-        BorderColor: =If(Block_one + Block_two + Block_three < 10, Red, Black)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =43
-        Size: =14
-        Text: =Block_two
-        Width: =53
-        X: =605
-        Y: =357
-        ZIndex: =4
-
-    Label4_2 As label:
-        Align: =Align.Center
-        BorderColor: =If(Block_one + Block_two + Block_three < 10, Red, Black)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =43
-        Size: =14
-        Text: =Block_three
-        Width: =53
-        X: =687
-        Y: =357
-        ZIndex: =5
-
     Label5 As label:
         Align: =Align.Center
         BorderColor: =
@@ -145,4 +106,64 @@ Screen1 As screen:
         X: =658
         Y: =26
         ZIndex: =16
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =49
+        Items: =dice
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =0
+        Width: =33
+        X: =653
+        Y: =308
+        ZIndex: =17
+
+        Image2 As image:
+            Height: =33
+            Image: =ThisItem.img_dice
+            OnSelect: =Select(Parent)
+            Visible: =If(Block_one = ThisItem.ID,true,false)
+            Width: =33
+            Y: =4
+            ZIndex: =1
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =54
+        Items: =dice
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =0
+        Width: =48
+        X: =623
+        Y: =357
+        ZIndex: =18
+
+        Image4 As image:
+            Height: =0
+            Image: =ThisItem.img_dice
+            OnSelect: =Select(Parent)
+            Visible: =If(Block_two = ThisItem.ID,true,false)
+            Width: =44
+            Y: =3
+            ZIndex: =1
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =43
+        Items: =dice
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =38
+        Width: =46
+        X: =686
+        Y: =368
+        ZIndex: =19
+
+        Image5 As image:
+            Height: =38
+            Image: =ThisItem.img_dice
+            OnSelect: =Select(Parent)
+            Visible: =If(Block_three = ThisItem.ID,true,false)
+            Width: =44
+            ZIndex: =1
 
