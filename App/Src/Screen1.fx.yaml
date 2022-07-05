@@ -6,7 +6,7 @@ Screen1 As screen:
         Height: =564
         Width: =1238
         X: =58
-        Y: =82
+        Y: =97
         ZIndex: =1
 
     Circle1 As circle:
@@ -92,39 +92,6 @@ Screen1 As screen:
         X: =643
         Y: =344
         ZIndex: =7
-
-    Label8 As label:
-        Color: =RGBA(0, 134, 208, 1)
-        DisabledFill: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(232, 244, 217, 1)
-        FontWeight: =FontWeight.Bold
-        Size: =25
-        Text: ="Nhà"
-        Width: =285
-        X: =535
-        Y: =26
-        ZIndex: =8
-
-    Label8_1 As label:
-        Color: =RGBA(127, 178, 57, 1)
-        FontWeight: =FontWeight.Bold
-        Size: =25
-        Text: ="Cái"
-        Width: =285
-        X: =605
-        Y: =26
-        ZIndex: =9
-
-    Label8_5 As label:
-        BorderColor: =RGBA(56, 96, 178, 1)
-        Color: =RGBA(168, 0, 0, 1)
-        FontWeight: =FontWeight.Bold
-        Size: =25
-        Text: ="Synodus"
-        Width: =285
-        X: =658
-        Y: =26
-        ZIndex: =10
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =57
@@ -250,4 +217,45 @@ Screen1 As screen:
         X: =510
         Y: =541
         ZIndex: =16
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =48
+        Width: =294
+        X: =532
+        Y: =11
+        ZIndex: =17
+
+        Label8 As label:
+            Color: =RGBA(0, 134, 208, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(232, 244, 217, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =25
+            Text: ="Nhà"
+            Width: =287
+            X: =3
+            Y: =3
+            ZIndex: =1
+
+        Label8_1 As label:
+            Color: =RGBA(127, 178, 57, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Size: =25
+            Text: ="Cái"
+            Width: =192
+            X: =75
+            ZIndex: =2
+
+        Label8_5 As label:
+            BorderColor: =RGBA(56, 96, 178, 1)
+            Color: =RGBA(168, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =25
+            Text: ="Synodus"
+            Width: =189
+            X: =134
+            ZIndex: =3
 
