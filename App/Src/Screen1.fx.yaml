@@ -1,4 +1,5 @@
 Screen1 As screen:
+    Fill: =
 
     Circle1 As circle:
         BorderColor: =If(Block_one + Block_two + Block_three < 10, Red, Black)
@@ -64,6 +65,7 @@ Screen1 As screen:
         Align: =Align.Center
         BorderColor: =
         BorderThickness: =1
+        Fill: =RGBA(238, 204, 204, 1)
         FontWeight: =FontWeight.Semibold
         Height: =41
         Size: =15
@@ -111,15 +113,9 @@ Screen1 As screen:
         FontWeight: =FontWeight.Bold
         Size: =18
         Text: =If(Block_one + Block_two + Block_three > 10, "Tài", "Xỉu") & " / " & Block_one + Block_two + Block_three
-        X: =603
-        Y: =205
+        X: =598
+        Y: =191
         ZIndex: =9
-
-    Timer1 As timer:
-        Height: =146
-        Width: =216
-        X: =76
-        ZIndex: =10
 
     Label8 As label:
         Color: =Red
@@ -144,7 +140,7 @@ Screen1 As screen:
     Label8_5 As label:
         FontWeight: =FontWeight.Bold
         Size: =25
-        Text: ="Synudos"
+        Text: ="Synodus"
         Width: =285
         X: =658
         Y: =26
