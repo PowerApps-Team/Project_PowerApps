@@ -1,0 +1,106 @@
+Screen2 As screen:
+
+    Timer1 As timer:
+        Duration: =30000
+        OnSelect: =
+        OnTimerEnd: =true
+        Reset: =ResetTime
+        Start: =StartTime
+        X: =310
+        Y: =176
+        ZIndex: =1
+
+    Button3 As button:
+        OnSelect: =Set(StartTime,!StartTime)
+        Text: ="Start/pause"
+        X: =376
+        Y: =374
+        ZIndex: =2
+
+    Label1 As label:
+        Text: =Timer1.Text
+        X: =687
+        Y: =176
+        ZIndex: =3
+
+    Button4 As button:
+        AutoDisableOnSelect: =false
+        Height: =36
+        Text: |-
+            =If(
+                Timer1.Text="00:00:00",
+                "00",
+                Timer1.Text="00:00:01",
+                "01",
+                Timer1.Text="00:00:02",
+                "02",
+                Timer1.Text="00:00:03",
+                "03",
+                Timer1.Text="00:00:04",
+                "04",
+                Timer1.Text="00:00:05",
+                "05",
+                Timer1.Text="00:00:06",
+                "06",
+                Timer1.Text="00:00:07",
+                "07",
+                Timer1.Text="00:00:08",
+                "08",
+                Timer1.Text="00:00:09",
+                "09",
+                Timer1.Text="00:00:10",
+                "10",
+                Timer1.Text="00:00:11",
+                "11",
+                Timer1.Text="00:00:12",
+                "12",
+                Timer1.Text="00:00:13",
+                "13",
+                Timer1.Text="00:00:14",
+                "14",
+                Timer1.Text="00:00:15",
+                "15",
+                Timer1.Text="00:00:16",
+                "16",
+                Timer1.Text="00:00:17",
+                "17",
+                Timer1.Text="00:00:18",
+                "18",
+                Timer1.Text="00:00:19",
+                "19",
+                Timer1.Text="00:00:20",
+                "20",
+                Timer1.Text="00:00:21",
+                "21",
+                Timer1.Text="00:00:22",
+                "22",
+                Timer1.Text="00:00:23",
+                "23",
+                Timer1.Text="00:00:24",
+                "24",
+                Timer1.Text="00:00:25",
+                "25",
+                Timer1.Text="00:00:26",
+                "26",
+                Timer1.Text="00:00:27",
+                "27",
+                Timer1.Text="00:00:28",
+                "28",
+                Timer1.Text="00:00:29",
+                "29",
+                Timer1.Text="00:00:30",
+                "30",
+                "0"
+                )
+        Width: =39
+        X: =760
+        Y: =245
+        ZIndex: =4
+
+    Button5 As button:
+        OnSelect: =Set(ResetTime,true)
+        Text: ="Button"
+        X: =624
+        Y: =374
+        ZIndex: =5
+
