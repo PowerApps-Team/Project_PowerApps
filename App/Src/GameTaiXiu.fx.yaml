@@ -32,7 +32,7 @@ GameTaiXiu As screen:
             Set(L,true);
             Set(M,false);
             Patch(Session,Defaults(Session),
-                {Title:session},
+                {Title:If(Block_one + Block_two + Block_three>10,"Tài","Xỉu")},
                 {Dice_1:Block_one},
                 {Dice_2:Block_two},
                 {Dice_3:Block_three},
@@ -218,7 +218,7 @@ GameTaiXiu As screen:
             Set(Block_one,RandBetween( 1, 6 ));
             Set(Block_two,RandBetween( 1, 6 ));
             Set(Block_three,RandBetween( 1, 6 ));
-            Set(session,session+1);
+            Set(session,CountRows(Session.Session_ID));
             Set(L,false);
             Set(M,true);
         Text: ="Lắc"
