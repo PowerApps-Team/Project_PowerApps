@@ -1,4 +1,4 @@
-Screen2 As screen:
+Test As screen:
 
     Timer1 As timer:
         Duration: =500

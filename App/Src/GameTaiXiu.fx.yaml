@@ -1,4 +1,4 @@
-Screen1 As screen:
+GameTaiXiu As screen:
     Fill: =RGBA(136, 160, 209, 1)
 
     Circle2 As circle:
@@ -56,7 +56,7 @@ Screen1 As screen:
         BorderThickness: =2
         Fill: |-
             =//RGBA(215, 223, 240, 1)
-            If(ShowResult=false,RGBA(215, 223, 240, 1),Block_one + Block_two + Block_three > 10, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
+            If(ShowResult=false,RGBA(215, 223, 140, 1),Block_one + Block_two + Block_three > 10, RGBA(255, 191, 0, 1), RGBA(215, 223, 140, 1))
         FontWeight: =FontWeight.Bold
         Height: =153
         Size: =20
@@ -70,8 +70,8 @@ Screen1 As screen:
         Align: =Align.Center
         BorderColor: =If(ShowResult=false,Black,Block_one + Block_two + Block_three < 11, Red, Black)
         BorderThickness: =2
-        Fill: |-
-            =If(ShowResult=false,RGBA(215, 223, 240, 1),Block_one + Block_two + Block_three < 11, ColorValue("#FFFF99"), RGBA(215, 223, 240, 1))
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =If(ShowResult=false,RGBA(215, 223, 140, 1),Block_one + Block_two + Block_three < 11, RGBA(255, 191, 0, 1), RGBA(215, 223, 140, 1))
         FontWeight: =FontWeight.Bold
         Height: =153
         Size: =20
@@ -221,4 +221,137 @@ Screen1 As screen:
     Component1_2 As Component1:
         Height: =56
         ZIndex: =17
+
+    Icon1 As icon.ChevronLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =56
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(Home)
+        Width: =58
+        ZIndex: =18
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =38
+        Width: =484
+        X: =441
+        Y: =479
+        ZIndex: =19
+
+        Icon2 As icon.CancelBadge:
+            Color: =RGBA(221, 79, 14, 1)
+            Height: =38
+            Icon: =Icon.Search
+            OnSelect: =Set(show100,!show100)
+            Width: =45
+            X: =438
+            ZIndex: =1
+
+    Container5 As groupContainer.manualLayoutContainer:
+        BorderThickness: =1
+        Fill: =RGBA(167, 182, 203, 1)
+        Height: =80
+        Width: =309
+        X: =551
+        Y: =688
+        ZIndex: =23
+
+        Label4 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            PaddingLeft: =10
+            Size: =17
+            Text: ="Chieu"
+            Width: =231
+            X: =80
+            ZIndex: =1
+
+        Image6 As image:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(39, 67, 125, 1)
+            Height: =80
+            Image: =bd014e320cb0fc316a4875696c2c56df
+            ImagePosition: =ImagePosition.Fill
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =80
+            ZIndex: =2
+
+        Label8 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            PaddingLeft: =10
+            Size: =15
+            Text: ="1.000.000 $"
+            Width: =231
+            X: =80
+            Y: =32
+            ZIndex: =3
+
+    "Gallery6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(255, 255, 0, 1)
+        BorderThickness: =1
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =144
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =33
+        Visible: =show100
+        Width: =484
+        WrapCount: =15
+        X: =441
+        Y: =517
+        ZIndex: =24
+
+        Circle8 As circle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =25
+            OnSelect: =Select(Parent)
+            Width: =25
+            X: =3
+            Y: =3
+            ZIndex: =6
+
+    "Gallery8 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        Height: =38
+        Items: =Session
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =33
+        Width: =444
+        X: =441
+        Y: =479
+        ZIndex: =25
+
+        Label9 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 0)
+            Height: =18
+            OnSelect: =Select(Parent)
+            Size: =5
+            Text: =ThisItem.Total
+            Width: =25
+            X: =4
+            Y: =7
+            ZIndex: =1
+
+        Circle9 As circle:
+            Fill: =If(ThisItem.Total>10,Black,White)
+            Height: =25
+            OnSelect: =Select(Parent)
+            Width: =25
+            X: =4
+            Y: =7
+            ZIndex: =2
 

@@ -13,12 +13,20 @@
         "dataSources": {
           "dice": {
             "tableName": "afcb11af-842a-41a2-97f7-b98cdbb0b458"
+          },
+          "ListGame": {
+            "tableName": "98ff9842-1523-44aa-afbb-9f1344de8da2"
+          },
+          "Session": {
+            "tableName": "6c1320d5-409a-4596-9251-e69540853784"
           }
         }
       }
     },
     "dataSources": [
-      "dice"
+      "dice",
+      "ListGame",
+      "Session"
     ],
     "dependencies": {},
     "dependents": [],
