@@ -213,7 +213,14 @@
               "X",
               "Y",
               "Width",
-              "Height",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "48",
+                "InvariantPropertyName": "Height",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisplayMode",
               "ZIndex",
               "LineHeight",
@@ -402,7 +409,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "48",
+                "InvariantScript": "Rectangle1.Height",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -565,7 +572,14 @@
               "X",
               "Y",
               "Width",
-              "Height",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "48",
+                "InvariantPropertyName": "Height",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisplayMode",
               "ZIndex",
               "LineHeight",
@@ -754,7 +768,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "48",
+                "InvariantScript": "Rectangle1.Height",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -917,7 +931,14 @@
               "X",
               "Y",
               "Width",
-              "Height",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "47",
+                "InvariantPropertyName": "Height",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisplayMode",
               "ZIndex",
               "LineHeight",
@@ -1100,13 +1121,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "287",
+                "InvariantScript": "275",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "47",
+                "InvariantScript": "Rectangle1.Height",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1219,8 +1240,22 @@
             "NameMapSourceSchema": "?"
           },
           "Y",
-          "Width",
-          "Height",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "294",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Height",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "DisplayMode",
           "LayoutMode",
           "LayoutDirection",
@@ -1230,7 +1265,15 @@
           "LayoutOverflowX",
           "LayoutOverflowY",
           "LayoutWrap",
-          "ZIndex"
+          "ZIndex",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "PaddingBottom",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "5",
         "HasDynamicProperties": false,
@@ -1267,25 +1310,25 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "(App.Width-Self.Width)/2",
+            "InvariantScript": "555",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "4",
+            "InvariantScript": "0",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "294",
+            "InvariantScript": "282",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "48",
+            "InvariantScript": "Rectangle1.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1348,6 +1391,12 @@
             "InvariantScript": "2",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingBottom",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "",
@@ -1389,7 +1438,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637927813642142161",
+    "LastModifiedTimestamp": "637927994639263167",
     "Name": "Component1",
     "Rules": [
       {
@@ -1448,7 +1497,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637927813642142161",
+  "LastModifiedTimestamp": "637927994639263167",
   "Name": "7e5cef991bfb423a9bf7c4443857d6a0",
   "OverridableProperties": {},
   "Version": "637926682829732713"

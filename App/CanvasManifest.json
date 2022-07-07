@@ -104,6 +104,7 @@
   "ScreenOrder": [
     "Home",
     "GameTaiXiu",
-    "Test"
+    "Test",
+    "Screen1"
   ]
 }

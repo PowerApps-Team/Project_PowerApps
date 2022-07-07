@@ -13,10 +13,9 @@ Component1 As CanvasComponent:
         ZIndex: =1
 
     Container2_2 As groupContainer.manualLayoutContainer:
-        Height: =48
-        Width: =294
-        X: =(App.Width-Self.Width)/2
-        Y: =4
+        Height: =Rectangle1.Height
+        Width: =282
+        X: =555
         ZIndex: =2
 
         Label8_7 As label:
@@ -24,10 +23,10 @@ Component1 As CanvasComponent:
             DisabledFill: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(232, 244, 217, 1)
             FontWeight: =FontWeight.Bold
-            Height: =47
+            Height: =Rectangle1.Height
             Size: =25
             Text: ="Nhà"
-            Width: =287
+            Width: =275
             X: =3
             Y: =1
             ZIndex: =1
@@ -35,7 +34,7 @@ Component1 As CanvasComponent:
         Label8_4 As label:
             Color: =RGBA(127, 178, 57, 1)
             FontWeight: =FontWeight.Bold
-            Height: =48
+            Height: =Rectangle1.Height
             Size: =25
             Text: ="Cái"
             Width: =192
@@ -46,7 +45,7 @@ Component1 As CanvasComponent:
             BorderColor: =RGBA(56, 96, 178, 1)
             Color: =RGBA(168, 0, 0, 1)
             FontWeight: =FontWeight.Bold
-            Height: =48
+            Height: =Rectangle1.Height
             Size: =25
             Text: ="Synodus"
             Width: =162
