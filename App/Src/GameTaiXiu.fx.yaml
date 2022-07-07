@@ -52,7 +52,7 @@ GameTaiXiu As screen:
         Height: =41
         Size: =15
         Text: |-
-            ="Phiên: " & session
+            ="Phiên: " & session+1
         Width: =224
         X: =558
         Y: =133
