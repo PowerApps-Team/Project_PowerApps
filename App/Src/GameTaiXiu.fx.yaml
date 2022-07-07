@@ -325,7 +325,9 @@ GameTaiXiu As screen:
 
     "Gallery8 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         Height: =38
-        Items: =Session
+        Items: |-
+            =//Session
+            LastN  (  Session,  10 )
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =33
