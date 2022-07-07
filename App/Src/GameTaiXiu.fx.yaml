@@ -52,7 +52,7 @@ GameTaiXiu As screen:
         Height: =41
         Size: =15
         Text: |-
-            ="Phiên: " & session+1
+            ="Phiên: " & session
         Width: =224
         X: =558
         Y: =133
@@ -218,7 +218,7 @@ GameTaiXiu As screen:
             Set(Block_one,RandBetween( 1, 6 ));
             Set(Block_two,RandBetween( 1, 6 ));
             Set(Block_three,RandBetween( 1, 6 ));
-            Set(session,CountRows(Session.Session_ID));
+            Set(session,CountRows(Session.Session_ID)+1);
             Set(L,false);
             Set(M,true);
         Text: ="Lắc"

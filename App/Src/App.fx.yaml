@@ -7,7 +7,7 @@ App As appinfo:
         Set(Block_one,RandBetween( 1, 6 ));
         Set(Block_two,RandBetween( 1, 6 ));
         Set(Block_three,RandBetween( 1, 6 ));
-        Set(session,session+1);
+        Set(session,CountRows(Session.Session_ID)+1);
         Set(L,false);
         Set(M,true);
 
