@@ -51,7 +51,7 @@
         "Name": "Rectangle1",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 95,
+        "PublishOrderIndex": 99,
         "Rules": [
           {
             "Category": "Design",
@@ -255,7 +255,7 @@
             "Name": "Label8_4",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 97,
+            "PublishOrderIndex": 101,
             "Rules": [
               {
                 "Category": "Data",
@@ -614,7 +614,7 @@
             "Name": "Label8_8",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 98,
+            "PublishOrderIndex": 102,
             "Rules": [
               {
                 "Category": "Data",
@@ -973,7 +973,7 @@
             "Name": "Label8_7",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 99,
+            "PublishOrderIndex": 103,
             "Rules": [
               {
                 "Category": "Data",
@@ -1288,7 +1288,7 @@
         "Name": "Container2_2",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 96,
+        "PublishOrderIndex": 100,
         "Rules": [
           {
             "Category": "Design",
@@ -1438,7 +1438,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637928483450295104",
+    "LastModifiedTimestamp": "637928667177977020",
     "Name": "Component1",
     "Rules": [
       {
@@ -1497,7 +1497,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637928483450295104",
+  "LastModifiedTimestamp": "637928667177977020",
   "Name": "7e5cef991bfb423a9bf7c4443857d6a0",
   "OverridableProperties": {},
   "Version": "637926682829732713"
