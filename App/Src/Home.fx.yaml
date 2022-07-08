@@ -20,7 +20,10 @@ Home As screen:
             Image5 As image:
                 Height: =138
                 Image: ='0_1827_0_201112101645_6sideddice'
-                OnSelect: =Navigate(GameTaiXiu)
+                OnSelect: |-
+                    =If(User_login="",Navigate(Login),
+                    Patch(User,First(Filter(User,Mail=User_login)),{TaiXiu:"on"});
+                    Navigate(GameTaiXiu))
                 Width: =200
                 ZIndex: =1
 

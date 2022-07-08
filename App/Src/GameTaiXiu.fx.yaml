@@ -234,7 +234,9 @@ GameTaiXiu As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =41
         Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(Home)
+        OnSelect: |-
+            =Patch(User,First(Filter(User,Mail=User_login)),{TaiXiu:"off"});
+            Navigate(Home)
         Width: =58
         Y: =7
         ZIndex: =14
@@ -379,7 +381,7 @@ GameTaiXiu As screen:
     "Gallery4_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Fill: =RGBA(0, 13, 75, 1)
         Height: =55
-        Items: =Search(User,User_login,"Mail")
+        Items: =Index(Search(User,"on","TaiXiu"),2)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -387,7 +389,7 @@ GameTaiXiu As screen:
         Visible: =_login
         Width: =305
         X: =1061
-        Y: =56
+        Y: =67
         ZIndex: =20
 
         Image8_2 As image:
@@ -441,14 +443,14 @@ GameTaiXiu As screen:
     "Gallery4_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Fill: =RGBA(0, 13, 75, 1)
         Height: =55
-        Items: =Search(User,"on","TaiXiu")
+        Items: =Index(Search(User,"on","TaiXiu"),1)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =60
         Visible: =_login
         Width: =305
-        Y: =56
+        Y: =67
         ZIndex: =21
 
         Image8_3 As image:
@@ -502,7 +504,7 @@ GameTaiXiu As screen:
     "Gallery4_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Fill: =RGBA(0, 13, 75, 1)
         Height: =55
-        Items: =Search(User,User_login,"Mail")
+        Items: =Index(Search(User,"on","TaiXiu"),3)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -563,7 +565,7 @@ GameTaiXiu As screen:
     "Gallery4_5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Fill: =RGBA(0, 13, 75, 1)
         Height: =55
-        Items: =Search(User,User_login,"Mail")
+        Items: =Index(Search(User,"on","TaiXiu"),4)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
