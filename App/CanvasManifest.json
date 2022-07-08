@@ -84,10 +84,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "e1573dbe-590f-4e1d-bf5d-4641b49ff181",
-    "Id": "e1573dbe-590f-4e1d-bf5d-4641b49ff181",
+    "Id": "2f12cbf8-52c2-4657-b9dd-c03841d880a7",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "AppTest",
+    "Name": "AppTest.msapp",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
