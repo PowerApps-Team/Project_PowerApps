@@ -21,8 +21,8 @@ Login As screen:
                 Set(_login,false) && Set(validate_Login,"Sai tài khoản hoặc mật khẩu"),
                 Set(_login,true) && Set(validate_Login,"") && Set(User_login,TextInput1.Text)&&Navigate(Home))
             Text: ="Đăng nhập"
-            X: =249
-            Y: =358
+            X: =248
+            Y: =336
             ZIndex: =1
 
         Label12 As label:
@@ -59,8 +59,8 @@ Login As screen:
             OnSelect: =Navigate(ForgotPass)
             Text: ="Bạn quên mật khẩu ?"
             Width: =439
-            X: =110
-            Y: =294
+            X: =111
+            Y: =263
             ZIndex: =6
 
         Label16 As label:
@@ -72,8 +72,8 @@ Login As screen:
                 Navigate(Register);
             Text: ="Hoặc đăng ký tại đây !"
             Width: =196
-            X: =110
-            Y: =318
+            X: =111
+            Y: =297
             ZIndex: =7
 
         Label20 As label:

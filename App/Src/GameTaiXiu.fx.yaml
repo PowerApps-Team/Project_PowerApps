@@ -256,58 +256,6 @@ GameTaiXiu As screen:
             X: =439
             ZIndex: =1
 
-    Container5 As groupContainer.manualLayoutContainer:
-        BorderThickness: =1
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =80
-        Width: =309
-        X: =551
-        Y: =688
-        ZIndex: =16
-
-        Label4 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 0, 1)
-            Fill: =RGBA(0, 16, 96, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =32
-            PaddingLeft: =10
-            Size: =17
-            Text: ="Chieu"
-            Width: =231
-            X: =80
-            ZIndex: =1
-
-        Image6 As image:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Fill: =RGBA(39, 67, 125, 1)
-            Height: =80
-            Image: =bd014e320cb0fc316a4875696c2c56df
-            ImagePosition: =ImagePosition.Fill
-            RadiusBottomLeft: =50
-            RadiusBottomRight: =50
-            RadiusTopLeft: =50
-            RadiusTopRight: =50
-            Width: =80
-            ZIndex: =2
-
-        Label8 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 191, 0, 1)
-            Fill: =RGBA(0, 13, 75, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =48
-            PaddingLeft: =10
-            Size: =15
-            Text: ="1.000.000 $"
-            Width: =231
-            X: =80
-            Y: =32
-            ZIndex: =3
-
     "Gallery8 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         Height: =38
         Items: |-
@@ -365,4 +313,312 @@ GameTaiXiu As screen:
             X: =3
             Y: =3
             ZIndex: =6
+
+    "Gallery4_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =55
+        Items: =Search(User,User_login,"Mail")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =60
+        Visible: =_login
+        Width: =305
+        X: =544
+        Y: =713
+        ZIndex: =19
+
+        Image8_1 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =55
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =55
+            ZIndex: =1
+
+        Title2_1 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =242
+            X: =63
+            ZIndex: =2
+
+        Subtitle2_1 As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Money &  " $"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_1.Width
+            X: =63
+            Y: =24
+            ZIndex: =3
+
+    "Gallery4_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =55
+        Items: =Search(User,User_login,"Mail")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =60
+        Visible: =_login
+        Width: =305
+        X: =1061
+        Y: =56
+        ZIndex: =20
+
+        Image8_2 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =55
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =55
+            ZIndex: =1
+
+        Title2_2 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =242
+            X: =63
+            ZIndex: =2
+
+        Subtitle2_2 As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Money &  " $"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_2.Width
+            X: =63
+            Y: =24
+            ZIndex: =3
+
+    "Gallery4_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =55
+        Items: =Search(User,User_login,"Mail")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =60
+        Visible: =_login
+        Width: =305
+        Y: =56
+        ZIndex: =21
+
+        Image8_3 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =55
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =55
+            ZIndex: =1
+
+        Title2_3 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =242
+            X: =63
+            ZIndex: =2
+
+        Subtitle2_3 As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Money &  " $"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_3.Width
+            X: =63
+            Y: =24
+            ZIndex: =3
+
+    "Gallery4_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =55
+        Items: =Search(User,User_login,"Mail")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =60
+        Visible: =_login
+        Width: =305
+        Y: =713
+        ZIndex: =22
+
+        Image8_4 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =55
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =55
+            ZIndex: =1
+
+        Title2_4 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =242
+            X: =63
+            ZIndex: =2
+
+        Subtitle2_4 As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Money &  " $"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_4.Width
+            X: =63
+            Y: =24
+            ZIndex: =3
+
+    "Gallery4_5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =55
+        Items: =Search(User,User_login,"Mail")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =60
+        Visible: =_login
+        Width: =305
+        X: =1061
+        Y: =713
+        ZIndex: =23
+
+        Image8_5 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
+            Height: =55
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =55
+            ZIndex: =1
+
+        Title2_5 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 16, 96, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =242
+            X: =63
+            ZIndex: =2
+
+        Subtitle2_5 As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Money &  " $"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_5.Width
+            X: =63
+            Y: =24
+            ZIndex: =3
 
