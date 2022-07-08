@@ -100,9 +100,3 @@ Login As screen:
         Y: =203
         ZIndex: =4
 
-    Label20 As label:
-        Text: ="Text"
-        X: =113
-        Y: =163
-        ZIndex: =5
-
