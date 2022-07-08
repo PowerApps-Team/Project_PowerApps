@@ -105,6 +105,9 @@
     "Home",
     "GameTaiXiu",
     "Test",
-    "Screen1"
+    "Screen1",
+    "Login",
+    "Register",
+    "ForgotPass"
   ]
 }

@@ -19,6 +19,9 @@
           },
           "Session": {
             "tableName": "6c1320d5-409a-4596-9251-e69540853784"
+          },
+          "User": {
+            "tableName": "817cbaa0-8b91-49ca-91db-a8a9cb274e67"
           }
         }
       }
@@ -26,7 +29,8 @@
     "dataSources": [
       "dice",
       "ListGame",
-      "Session"
+      "Session",
+      "User"
     ],
     "dependencies": {},
     "dependents": [],
