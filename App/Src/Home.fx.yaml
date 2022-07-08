@@ -36,12 +36,6 @@ Home As screen:
                 Y: =138
                 ZIndex: =2
 
-        Label21 As label:
-            Text: ="Text"
-            X: =490
-            Y: =110
-            ZIndex: =2
-
     Component1_1 As Component1:
         Height: =58
         ZIndex: =3
@@ -87,8 +81,10 @@ Home As screen:
         ZIndex: =7
 
         Image8 As image:
+            BorderColor: =RGBA(0, 13, 75, 1)
+            BorderThickness: =1
             Height: =55
-            Image: =If(IsEmpty(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
+            Image: =If(IsBlank(First(ThisItem.Attachments).AbsoluteUri),images,First(ThisItem.Attachments).AbsoluteUri)
             ImagePosition: =ImagePosition.Fill
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =50
