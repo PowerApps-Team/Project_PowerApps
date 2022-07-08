@@ -15,9 +15,9 @@ Login As screen:
         ZIndex: =2
 
         Button6 As button:
-            Text: ="Login"
-            X: =250
-            Y: =276
+            Text: ="Đăng nhập"
+            X: =249
+            Y: =342
             ZIndex: =1
 
         TextInput1 As text:
@@ -25,7 +25,7 @@ Login As screen:
             Height: =41
             Width: =439
             X: =111
-            Y: =81
+            Y: =125
             ZIndex: =2
 
         Label12 As label:
@@ -35,7 +35,7 @@ Login As screen:
             Text: |-
                 ="Tài khoản:"
             X: =111
-            Y: =41
+            Y: =85
             ZIndex: =3
 
         Label12_1 As label:
@@ -44,16 +44,16 @@ Login As screen:
             Size: =17
             Text: |-
                 ="Mật khẩu:"
-            X: =111
-            Y: =149
+            X: =110
+            Y: =180
             ZIndex: =4
 
         TextInput1_1 As text:
             Default: =
             Height: =41
             Width: =439
-            X: =111
-            Y: =189
+            X: =110
+            Y: =220
             ZIndex: =5
 
         Label13 As label:
@@ -62,9 +62,22 @@ Login As screen:
             OnSelect: =Navigate(ForgotPass)
             Text: ="Bạn quên mật khẩu ?"
             Width: =439
-            X: =111
-            Y: =333
+            X: =110
+            Y: =272
             ZIndex: =6
+
+        Label16 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            OnSelect: |
+                =NewForm(Form1);
+                Set(RegisterSuccess,false);
+                Navigate(Register);
+            Text: ="Hoặc đăng ký tại đây !"
+            Width: =196
+            X: =110
+            Y: =303
+            ZIndex: =7
 
     Icon4 As icon.ChevronLeft:
         Color: =RGBA(255, 255, 255, 1)
@@ -73,4 +86,23 @@ Login As screen:
         OnSelect: =Back()
         Width: =49
         ZIndex: =3
+
+    Label15 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =20
+        Text: ="Login"
+        Width: =655
+        X: =355
+        Y: =203
+        ZIndex: =4
+
+    Label20 As label:
+        Text: ="Text"
+        X: =113
+        Y: =163
+        ZIndex: =5
 
