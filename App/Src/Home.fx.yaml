@@ -44,6 +44,7 @@ Home As screen:
         BorderColor: =RGBA(0, 13, 75, 1)
         Fill: =RGBA(0, 13, 75, 1)
         Height: =55
+        Visible: =_login
         Width: =281
         ZIndex: =4
 
@@ -86,7 +87,21 @@ Home As screen:
         Height: =55
         OnSelect: =Navigate(Login)
         Size: =20
-        Text: ="Login"
+        Text: ="Đăng nhập"
+        Visible: =!_login
         X: =1216
         ZIndex: =5
+
+    Label11_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 16, 96, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        OnSelect: =Set(_login,false)
+        Size: =20
+        Text: ="Đăng xuất"
+        Visible: =_login
+        X: =1216
+        ZIndex: =6
 

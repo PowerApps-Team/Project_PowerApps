@@ -16,7 +16,7 @@ Register As screen:
 
         Form1 As form:
             DataSource: =User
-            Height: =464
+            Height: =447
             NumberOfColumns: =2
             Width: =1005
             Y: =49
@@ -177,10 +177,9 @@ Register As screen:
                 ZIndex: =1
 
                 DataCardKey16 As label:
-                    AutoHeight: =true
                     Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Semibold
-                    Height: =34
+                    Height: =33
                     Size: =15
                     Text: ="Ảnh"
                     Width: =Parent.Width - 60
@@ -192,7 +191,7 @@ Register As screen:
                 DataCardValue16 As attachments:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DisplayMode: =Parent.DisplayMode
-                    Height: =111
+                    Height: =97
                     IsInDataCard: =true
                     Items: =Parent.Default
                     PaddingBottom: =5
@@ -202,7 +201,7 @@ Register As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =944
                     X: =30
-                    Y: =44
+                    Y: =43
                     ZIndex: =2
 
                 ErrorMessage7 As label:
@@ -404,7 +403,7 @@ Register As screen:
             Text: ="Đăng ký"
             Width: =300
             X: =352
-            Y: =516
+            Y: =496
             ZIndex: =3
 
         Label19 As label:
@@ -414,8 +413,8 @@ Register As screen:
             Size: =15
             Text: =Validate
             Width: =937
-            X: =54
-            Y: =473
+            X: =33
+            Y: =456
             ZIndex: =4
 
     Icon5 As icon.ChevronLeft:

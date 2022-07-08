@@ -51,7 +51,7 @@
         "Name": "Rectangle1",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 99,
+        "PublishOrderIndex": 110,
         "Rules": [
           {
             "Category": "Design",
@@ -240,7 +240,14 @@
               "PaddingTop",
               "PaddingRight",
               "PaddingBottom",
-              "PaddingLeft"
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "PaddingLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
             ],
             "ControlUniqueId": "6",
             "HasDynamicProperties": false,
@@ -255,7 +262,7 @@
             "Name": "Label8_4",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 101,
+            "PublishOrderIndex": 112,
             "Rules": [
               {
                 "Category": "Data",
@@ -487,7 +494,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "5",
+                "InvariantScript": "1",
                 "Property": "PaddingLeft",
                 "RuleProviderType": "Unknown"
               }
@@ -614,7 +621,7 @@
             "Name": "Label8_8",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 102,
+            "PublishOrderIndex": 113,
             "Rules": [
               {
                 "Category": "Data",
@@ -973,7 +980,7 @@
             "Name": "Label8_7",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 103,
+            "PublishOrderIndex": 114,
             "Rules": [
               {
                 "Category": "Data",
@@ -1288,7 +1295,7 @@
         "Name": "Container2_2",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 100,
+        "PublishOrderIndex": 111,
         "Rules": [
           {
             "Category": "Design",
@@ -1438,7 +1445,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637928667177977020",
+    "LastModifiedTimestamp": "637928911273983695",
     "Name": "Component1",
     "Rules": [
       {
@@ -1497,7 +1504,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637928667177977020",
+  "LastModifiedTimestamp": "637928911273983695",
   "Name": "7e5cef991bfb423a9bf7c4443857d6a0",
   "OverridableProperties": {},
   "Version": "637926682829732713"

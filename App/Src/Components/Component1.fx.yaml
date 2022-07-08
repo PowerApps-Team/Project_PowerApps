@@ -35,6 +35,7 @@ Component1 As CanvasComponent:
             Color: =RGBA(127, 178, 57, 1)
             FontWeight: =FontWeight.Bold
             Height: =Rectangle1.Height
+            PaddingLeft: =1
             Size: =25
             Text: ="Cái"
             Width: =192

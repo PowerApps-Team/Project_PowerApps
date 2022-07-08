@@ -15,18 +15,15 @@ Login As screen:
         ZIndex: =2
 
         Button6 As button:
+            OnSelect: |
+                =If(Len(Trim(TextInput1.Text)) < 1 || Len(Trim(TextInput1_1.Text)) < 1,Set(validate_Login,"Vui lòng không bỏ trống"),
+                IsEmpty(Filter(User,Mail= TextInput1.Text)) && IsEmpty(Filter(User,Mail= TextInput1_1.Text)),
+                Set(_login,false) && Set(validate_Login,"Sai tài khoản hoặc mật khẩu"),
+                Set(_login,true) && Set(validate_Login,"") && Set(User_login,TextInput1.Text)&&Navigate(Home))
             Text: ="Đăng nhập"
             X: =249
-            Y: =342
+            Y: =358
             ZIndex: =1
-
-        TextInput1 As text:
-            Default: =
-            Height: =41
-            Width: =439
-            X: =111
-            Y: =125
-            ZIndex: =2
 
         Label12 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -35,7 +32,7 @@ Login As screen:
             Text: |-
                 ="Tài khoản:"
             X: =111
-            Y: =85
+            Y: =92
             ZIndex: =3
 
         Label12_1 As label:
@@ -63,7 +60,7 @@ Login As screen:
             Text: ="Bạn quên mật khẩu ?"
             Width: =439
             X: =110
-            Y: =272
+            Y: =294
             ZIndex: =6
 
         Label16 As label:
@@ -76,8 +73,28 @@ Login As screen:
             Text: ="Hoặc đăng ký tại đây !"
             Width: =196
             X: =110
-            Y: =303
+            Y: =318
             ZIndex: =7
+
+        Label20 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            Size: =15
+            Text: =validate_Login
+            Width: =438
+            X: =111
+            Y: =63
+            ZIndex: =8
+
+        TextInput1 As text:
+            Default: =
+            Height: =41
+            Width: =439
+            X: =110
+            Y: =132
+            ZIndex: =9
 
     Icon4 As icon.ChevronLeft:
         Color: =RGBA(255, 255, 255, 1)
