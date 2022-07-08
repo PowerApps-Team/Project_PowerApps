@@ -36,6 +36,8 @@
       "Money": "Money",
       "Password": "Password",
       "Phone": "Phone",
+      "TaiXiu": "TaiXiu",
+      "TaiXiu#Id": "TaiXiu Id",
       "Title": "Title"
     },
     "DatasetName": "https://m365x58945129.sharepoint.com/sites/mySitePhanChieu",
